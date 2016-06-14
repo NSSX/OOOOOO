@@ -1,0 +1,22 @@
+pov{
+        pos(0,0,10)
+        dir(0,0,0)
+}
+
+spot{
+	color(256,256,256)
+	pos(10,0,10);
+	int(90);
+}
+
+spot{
+        color(256,256,256)
+        pos(10,10,1);
+        int(90);
+}
+
+cylinder{
+	pos(0,0,0)
+	size(200)
+	color(0,0,256)
+}

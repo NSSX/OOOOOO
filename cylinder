@@ -1,0 +1,28 @@
+pov{
+        pos(0,5,10)
+        dir(0,0,0)
+}
+
+spot{
+	color(256,256,256)
+	pos(10,0,10);
+	int(90);
+}
+
+spot{
+        color(256,256,256)
+        pos(10,10,1);
+        int(90);
+}
+
+cylinder{
+	pos(0,0,0)
+	size(700)
+	color(0,0,256)
+}
+
+plane{
+	rot(0,1,0)
+	pos(0,-1,0);
+	ref(30)
+}

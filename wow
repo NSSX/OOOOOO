@@ -1,0 +1,58 @@
+pov{
+        pos(0,2,10)
+        dir(0,0,0)
+}
+
+spot{
+	color(256,256,256)
+        pos(0,5,10)
+        int(90);
+}
+
+spot{
+        color(256,256,256)
+        pos(6,14,2)
+        int(90);
+}
+
+sphere{
+	pos(-10,5,-14)
+	size(300)
+	color(0,0,256)
+}
+
+sphere{
+        pos(6,10,-5)
+        size(1000)
+        color(256,0,0)
+	ref(45)
+}
+
+plane{
+	rot(0,1,0)
+	pos(0,-1,0);
+	color(0,255,255);
+	ref(25)
+}
+
+plane{
+        rot(0,-3,0)
+        pos(0,8,0);
+        color(0,255,255);
+        ref(25)
+}
+
+plane{
+        rot(3,3,90)
+        pos(0,-1,-18);
+        color(0,255,255);
+        ref(25)
+}
+
+plane{
+        rot(90,0,0)
+        pos(-15,0,0);
+        color(255,0,255);
+        ref(25)
+}
+

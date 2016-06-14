@@ -1,0 +1,60 @@
+pov{
+        pos(0,2,10)
+        dir(0,0,0)
+}
+
+spot{
+	color(256,256,256)
+        pos(0,5,10)
+        int(90);
+}
+
+spot{
+        color(256,256,256)
+        pos(6,14,2)
+        int(90);
+}
+
+sphere{
+	pos(-10,5,-9)
+	size(300)
+	color(0,0,256)
+}
+
+sphere{
+        pos(6,10,-3)
+        size(400)
+        color(256,0,0)
+	ref(45)
+	refraction(40)
+}
+
+sphere{
+        pos(9,10,-3)
+        size(400)
+        color(256,0,0)
+        ref(45)
+        refraction(40)
+}
+
+plane{
+	rot(0,1,0)
+	pos(0,-1,0);
+	color(0,255,255);
+	ref(25)
+}
+
+cone{
+	ref(25)
+        pos(-10,5,-20)
+        size(300)
+        color(256,0,256)
+}
+
+triangle{
+	color(0,0,256)
+	pos1(1,0,0)
+	pos2(4,0,0)
+	pos3(2,3,0)
+}
+

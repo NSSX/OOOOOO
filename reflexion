@@ -1,0 +1,30 @@
+t_vec3d  reflexincidenton(t_vec3d *incident, t_vec3d *n)
+{
+  t_vec3d  v;
+
+  v.x = incident->x - 2.0 * mult(n, incident) * n->x;
+  v.y = incident->y - 2.0 * mult(n, incident) * n->y;
+  v.z = incident->z - 2.0 * mult(n, incident) * n->z;
+  return (v);
+}
+
+             nor = give_vec(e->obj_tmp, e);
+                double ref;
+                    ref = 1;
+                    color = e->color;
+                    if(e->obj_tmp->type == 1 || e->obj_tmp->type == 0)
+		                  ref = 0.25;
+                if (ref < 0.99 && e->incre < MAX)
+                  {
+                    e->incre += 1;
+		     reflex = vecreflect(&(e->ray_dir), &nor );
+                    ajust(&reflex);
+                    nor  =  mult_value(&nor , 0.01);
+                    e->pos = plus(&(e->pos), &nor );
+                    color =  mult_value(&(color), ref);
+                    e->ray_origin = e->pos;
+                    e->ray_dir = reflex;
+                    col_tmp = final_color(e);
+                    col_tmp =  mult_value(&col_tmp, 1.0 - ref);
+                    color = plus(&(color), &col_tmp);
+                  }
